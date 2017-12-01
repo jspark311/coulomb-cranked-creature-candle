@@ -1,0 +1,13 @@
+.directory
+*.gch
+*.o
+*.out
+*.map
+*.gcda
+*.gcno
+coverage.info
+
+sdkconfig
+sdkconfig.old
+
+build/
