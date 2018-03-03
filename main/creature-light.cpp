@@ -6,7 +6,7 @@
  http://10.10.10.1/ON turns the LED on
  http://10.10.10.1/OFF turns it off
  This example is written for a network using WPA encryption.
- 
+
  */
 
 #include "Adafruit_NeoPixel.h"
@@ -17,7 +17,7 @@
   }
 
 // Which pin on the ESP32 is connected to the NeoPixels?
-#define PIN          15
+#define PIN          14
 
 // How many NeoPixels LEDs are attached to the ESP32?
 #define NUMPIXELS   256
@@ -42,7 +42,7 @@ Adafruit_NeoPixel matrix = Adafruit_NeoPixel(NUMPIXELS, PIN, NEO_GRB + NEO_KHZ80
 *  // plasma demo for Adafruit RGBmatrixPanel library.
 *  // Demonstrates unbuffered animation on our 32x32 RGB LED matrix:
 *  // http://www.adafruit.com/products/607
-*  
+*
 *  // Written by Limor Fried/Ladyada & Phil Burgess/PaintYourDragon
 *  // for Adafruit Industries.
 *  // BSD license, all text above must be included in any redistribution.
@@ -85,7 +85,7 @@ static const int8_t sinetab[256] = {
 
 
 float radius1  = 16.3, radius2  = 23.0, radius3  = 40.8, radius4  = 44.2,
-            centerx1 = 16.1, centerx2 = 11.6, centerx3 = 23.4, centerx4 =  4.1, 
+            centerx1 = 16.1, centerx2 = 11.6, centerx3 = 23.4, centerx4 =  4.1,
             centery1 =  8.7, centery2 =  6.5, centery3 = 14.0, centery4 = -2.9;
 float       angle1   =  0.0, angle2   =  0.0, angle3   =  0.0, angle4   =  0.0;
 float       angle1_s =  0.0, angle2_s =  0.0, angle3_s =  0.0, angle4_s =  0.0;
